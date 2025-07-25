@@ -1,10 +1,13 @@
 # TinyAgent: Function Calling at the Edge
+
 <!--- BADGES: START --->
+
 [![Arxiv](https://img.shields.io/badge/arXiv-2409.00608-B31B1B.svg)][#arxiv-paper-package]
 [![GitHub license](https://img.shields.io/badge/License-MIT-blu.svg)][#license-gh-package]
 
 [#license-gh-package]: https://lbesson.mit-license.org/
 [#arxiv-paper-package]: https://arxiv.org/abs/2409.00608
+
 <!--- BADGES: END --->
 
 <p align="center">
@@ -102,7 +105,7 @@ Depending on the task simplicity, TinyAgent orchestrates the execution of differ
 
 When faced with challenging tasks, SLM agents require appropriate tools and in-context examples to guide them. If the model sees irrelevant examples, it can hallucinate. Likewise, if the model sees the descriptions of the tools that it doesn’t need, it usually gets confused, and these tools take up unnecessary prompt space. To tackle this, TinyAgent uses ToolRAG to retrieve the best tools and examples suited for a given query. This process has minimal latency and increases the accuracy of TinyAgent substantially. Please take a look at our [blog post](https://bair.berkeley.edu/blog/2024/05/29/tiny-agent) and our [ToolRAG model](https://huggingface.co/squeeze-ai-lab/TinyAgent-ToolRAG) for more details.
 
-> You need to first install our [ToolRAG model](https://huggingface.co/squeeze-ai-lab/TinyAgent-ToolRAG) from Hugging Face and enable it from the TinyAgent settings to use it.  
+> You need to first install our [ToolRAG model](https://huggingface.co/squeeze-ai-lab/TinyAgent-ToolRAG) from Hugging Face and enable it from the TinyAgent settings to use it.
 
 ### 🎙️ Whisper
 
@@ -145,7 +148,7 @@ We also provide our own fine-tuned open source models, TinyAgent-1.1B and TinyAg
 
 ## Customization
 
-You can customize your TinyAgent by going to `~/Library/Application Support/TinyAgent/tinyagent-llmcompiler` directory and changing the code yourself.
+You can customize your TinyAgent by going to `~/AppData/Roaming/TinyAgent/tinyagent-llmcompiler` directory and changing the code yourself.
 
 ### Using TinyAgent programmatically
 
